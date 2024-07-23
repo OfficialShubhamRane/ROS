@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -18,7 +20,7 @@ class HelloWorldPublisher(Node):
 def main(args=None):
     rclpy.init()
     my_pub = HelloWorldPublisher()
-    print("Publisher node running...")
+    print("New Publisher node running...")
 
     try:
         rclpy.spin(my_pub) # keeps the node running
