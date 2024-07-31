@@ -15,7 +15,13 @@ ament_python_install_package(scripts)
 install(PROGRAMS
   scripts/publisher.py
   scripts/subscriber.py
+  scripts/rpm_publisher.py
+  scripts/speed_publisher.py
   DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
 )
 
 if(BUILD_TESTING)
